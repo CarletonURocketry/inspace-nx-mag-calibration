@@ -1,0 +1,1 @@
+include $(wildcard $(APPDIR)/inspace-nx-mag-calibration/*/Make.defs)

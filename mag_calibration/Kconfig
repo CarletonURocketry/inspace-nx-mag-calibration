@@ -1,0 +1,33 @@
+#
+# For a description of the syntax of this configuration file,
+# see the file kconfig-language.txt in the NuttX tools repository.
+#
+
+config INSPACE_MAG_CALIBRATION
+	tristate "Magnetometer Calibration"
+	depends on UORB
+	default n
+	---help---
+		Enable magnetometer calibration application
+
+if INSPACE_MAG_CALIBRATION
+
+config INSPACE_MAG_CALIBRATION_PROGNAME
+	string "Program name"
+	default "mag_calibration"
+	---help---
+		This is the name of the program that performs magnetometer calibration.
+
+config INSPACE_MAG_CALIBRATION_PRIORITY
+	int "Task priority"
+	default 100
+	---help---
+		The task priority of the magnetometer calibration application.
+
+config INSPACE_MAG_CALIBRATION_STACKSIZE
+	int "Stack size"
+	default DEFAULT_TASK_STACKSIZE
+	---help---
+		The stack size of the magnetometer calibration application.
+
+endif

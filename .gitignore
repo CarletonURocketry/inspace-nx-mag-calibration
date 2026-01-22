@@ -1,0 +1,15 @@
+*.o
+*.su
+.cache/
+.kconfig
+.depend
+/Kconfig
+Make.dep
+.built
+*/data.img
+*/data_romfs.h
+*.gcda
+*.gcno
+.vscode
+compile_commands.json
+

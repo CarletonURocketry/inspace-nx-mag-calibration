@@ -1,0 +1,3 @@
+ifneq ($(CONFIG_INSPACE_MAG_CALIBRATION),)
+CONFIGURED_APPS += $(APPDIR)/inspace-nx-mag-calibration/mag_calibration
+endif
