@@ -30,4 +30,11 @@ config INSPACE_MAG_CALIBRATION_STACKSIZE
 	---help---
 		The stack size of the magnetometer calibration application.
 
+config INSPACE_MAG_CALIBRATION_N_SAMPLES
+	int "Number of samples"
+	default 1000
+	---help---
+		The number of samples to use to find the calibration values.
+	
+
 endif
